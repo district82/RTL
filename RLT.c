@@ -47,7 +47,7 @@ float main () {
     #define SIG ((1) / (-1(C--)));
     #define PI 3.1415926535;
     #define A (pow((PI * RAD), DIM));
-    #define V (time1 - time2);
+    #define PT ((C % FT) / T);
     #define VEL [T, V];
     #define PT ((C % FT) / T); 
     #define C exp(pow(A), ((exp(--IN)) / (exp(IN++))));
