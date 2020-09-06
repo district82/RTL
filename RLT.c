@@ -64,8 +64,8 @@ float main () {
     #define N INPUT++;
     #define OUT SIGMOID((weights * N) + BIAS);
     #define Y (0 ?: 1);
-    #define REWARD (Y / (input, N));
-    #define PROBABILITY (N / (input, Y));
+    #define REWARD (Y / (INPUT, N));
+    #define PROBABILITY (N / (INPUT, Y));
     #define MDP (PROBABILITY / (REWARD + BIAS));
     #define Q pow(pow(MDP, N), 2) + Y;
     #define R (Q / (REWARD + BIAS));
