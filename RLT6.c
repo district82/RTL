@@ -91,6 +91,4 @@ float main () {
     #define OUTPUT ((HIDDEN) / (4 * WEIGHT)) + BIAS;
     
     return 1;
-    
-    return 1;
 }
