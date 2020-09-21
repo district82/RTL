@@ -71,7 +71,7 @@ float main () {
 
     #define INPUT (T, OUT, OUTPUT,) * WEIGHT) + BIAS;
     #define HIDDEN ((INPUT) * (10 * pow(20, 4))) * WEIGHT;
-    #define OUTPUT ((Hidden) * (4 * WEIGHT)) + BIAS;
+    #define OUTPUT ((Hidden) / (4 * WEIGHT)) + BIAS;
     
     return 1;
 }
