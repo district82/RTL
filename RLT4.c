@@ -51,7 +51,7 @@ float main () {
     #define PT ((C % FT) / T); 
     #define C exp(pow(A), ((exp(--IN)) / (exp(IN++))));
     #define FT (((T) / C) - PT); 
-    #define T exp(((PT + FT) / VEL) / (pow(exp(VEL))), (exp(IN, DIM))));
+    #define T exp(((PT + FT) / V) / (pow(exp(VEL))), (exp(IN, DIM))));
 
     #define WEIGHT modf(((randn() % 1.0) + 0.0), float *wdiscard);
     #define EPSILON 5E-5;
