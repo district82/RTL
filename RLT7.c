@@ -63,9 +63,9 @@ float main () {
     //#define C exp(pow(A), ((exp(++PT)) / (exp(FT++)))); //preincrement the past and divide over the future
     
     //Begin telling computer about the past and future and all time
-    #define PT ((C % FT) / T);    
+    #define PT ((FT % C) / T);    
     #define FT (((T) / C) - PT);
-    #define T exp(((PT + FT) / V) / (pow(exp(V))), (exp(IN, DIM))));
+    #define T exp(((pow(exp(V))), (exp(IN, DIM))) / (V / (PT + FT)));
     
     //Tell it what to calculate and what is going into the constant
     #define V (pow(T, 3) / (PT - FT));
@@ -87,7 +87,7 @@ float main () {
 
     //Initialise the input, output and hidden layers of the network 
     #define INPUT ((T, OUT, OUTPUT) * WEIGHT) + BIAS;
-    #define HIDDEN (((INPUT) * (10 * pow(20, 4))) * WEIGHT);
+    #define HIDDEN ((10 * pow(20, 4)) * WEIGHT * (INPUT));
     #define OUTPUT ((4 * WEIGHT) / (HIDDEN)) + BIAS;
     
     return 1;
