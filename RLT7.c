@@ -44,7 +44,7 @@ float main () {
 
     //The basics, learning rate first
     #define EPSILON 5E-5;
-    #define Y (0 ?: 1);
+    #define Y (? 0 : 1);
     #define PI 3.1415926535;
     #define A (pow((PI * RAD), DIM));
     #define SIG ((1) / (-1(C--)));
