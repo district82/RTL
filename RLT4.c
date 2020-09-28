@@ -46,12 +46,12 @@ float main () {
     #define SIG ((1) / (-1(C--)));
     #define PI 3.1415926535;
     #define A (pow((PI * RAD), DIM));
-    #define V ((PT - FT) / pow(T, 3));
+    #define V (pow(T, 3) / (PT - FT));
     #define VEL [T, V];
-    #define PT ((C % FT) / T); 
-    #define C exp(pow(A), ((exp(--IN)) / (exp(IN++))));
-    #define FT (((T) / C) - PT); 
-    #define T exp(((PT + FT) / V) / (pow(exp(V))), (exp(IN, DIM))));
+    #define PT (T / (FT % C)); 
+    #define C exp(pow(A), ((exp(IN++)) / (exp(--IN))));
+    #define FT (PT - (C / (T))); 
+    #define T (exp((V / (PT + FT)) / (exp(pow(IN, DIM), (V)))));
 
     #define WEIGHT modf(((randn() % 1.0) + 0.0), float *wdiscard);
     #define EPSILON 5E-5;
@@ -62,7 +62,7 @@ float main () {
     #define BIAS modf(((randn() % 1.0) + 0.0), float *bdiscard);
     #define N INPUT++;
     #define OUT SIGMOID((weights * N) + BIAS);
-    #define Y (0 ?: 1);
+    #define Y (? 0 : 1);
     #define REWARD (Y / (INPUT, N));
     #define PROBABILITY (N / (INPUT, Y));
     #define MDP (PROBABILITY / (REWARD + BIAS));
@@ -71,7 +71,7 @@ float main () {
 
     #define INPUT (T, OUT, OUTPUT,) * WEIGHT) + BIAS;
     #define HIDDEN ((INPUT) * (10 * pow(20, 4))) * WEIGHT;
-    #define OUTPUT ((Hidden) / (4 * WEIGHT)) + BIAS;
+    #define OUTPUT ((4 * WEIGHT) / (Hidden)) + BIAS;
     
     return 1;
 }
