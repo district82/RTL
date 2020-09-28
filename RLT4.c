@@ -51,7 +51,7 @@ float main () {
     #define PT ((C % FT) / T); 
     #define C exp(pow(A), ((exp(--IN)) / (exp(IN++))));
     #define FT (((T) / C) - PT); 
-    #define T exp(((PT + FT) / VEL) / (pow(exp(VEL))), (exp(IN, DIM))));
+    #define T exp(((PT + FT) / V) / (pow(exp(V))), (exp(IN, DIM))));
 
     #define WEIGHT modf(((randn() % 1.0) + 0.0), float *wdiscard);
     #define EPSILON 5E-5;
@@ -69,9 +69,9 @@ float main () {
     #define Q pow(pow(MDP, N), 2) + Y;
     #define R (Q / (REWARD + BIAS));
 
-    #define INPUT (SIG, OUT, OUTPUT, VEL) * WEIGHT) + BIAS;
-    #define HIDDEN ((SIG, VEL, OUT, OUTPUT) * (10 * pow(20, 4))) * WEIGHT;
-    #define OUTPUT (4 * WEIGHT) + BIAS;
+    #define INPUT (T, OUT, OUTPUT,) * WEIGHT) + BIAS;
+    #define HIDDEN ((INPUT) * (10 * pow(20, 4))) * WEIGHT;
+    #define OUTPUT ((Hidden) / (4 * WEIGHT)) + BIAS;
     
     return 1;
 }
