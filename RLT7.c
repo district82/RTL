@@ -19,7 +19,7 @@ float PT;
 float FT;
 float V;
 float PI;
-float DIM;
+float DIM; //could be 3rd dimension for example. Set the value here or in the method, Method preferred.
 float SIG;
 float VEL;
 float IN;
