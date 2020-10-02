@@ -20,7 +20,7 @@ float FT;
 float V;
 float PI;
 float DIM;
-float SIG(C);
+float SIG;
 float VEL;
 float IN;
 float RAD = 1;
@@ -28,7 +28,7 @@ float RAD = 1;
 float WEIGHT;
 float weights;
 float EPSILON;
-float SIGMOID(O);
+float SIGMOID;
 float COST;
 float BIAS;
 float REWARD;
@@ -59,8 +59,8 @@ float main () {
     #define GRAD_DESCENT (pow(((COST) - (COST(EPSILON))), 2));    
         
     //Define constant first
-    #define C (exp(pow(A), ((exp(IN++)) / (exp(--IN))))); //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
-    //#define C (exp(pow(A), ((exp(++PT)) / (exp(FT++))))); //preincrement the past and divide over the future
+    #define C SIG(exp(pow(A), ((exp(IN++)) / (exp(--IN))))); //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
+    //#define C SIG(exp(pow(A), ((exp(++PT)) / (exp(FT++))))); //preincrement the past and divide over the future
     
     //Begin telling computer about the past and future and all time
     #define PT ((FT % C) / T);    
