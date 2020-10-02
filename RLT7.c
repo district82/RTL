@@ -48,24 +48,24 @@ float main () {
     #define PI 3.1415926535;
     #define A (pow((PI * RAD), DIM));
     #define SIG ((1) / (-1(C--)));
-    #define SIGMOID(O) (1.0 / (-1 + (exp(O)--))));
+    #define SIGMOID (1.0 / (-1 + (exp(O)--))));
     
     //Preparing for NN and Biases
-    #define WEIGHT modf(((randn() % 1.0) + 0.0), float *wdiscard);
-    #define BIAS modf(((randn() % 1.0) + 0.0), float *bdiscard);
+    #define WEIGHT (modf(((randn() % 1.0) + 0.0), float *wdiscard));
+    #define BIAS (modf(((randn() % 1.0) + 0.0), float *bdiscard));
     
     //Weigh up the costs and gradient of descent
     #define COST (weights, BIAS);
-    #define GRAD_DESCENT pow(((COST) - (COST(EPSILON))), 2);    
+    #define GRAD_DESCENT (pow(((COST) - (COST(EPSILON))), 2));    
         
     //Define constant first
-    #define C exp(pow(A), ((exp(IN++)) / (exp(--IN)))); //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
-    //#define C exp(pow(A), ((exp(++PT)) / (exp(FT++)))); //preincrement the past and divide over the future
+    #define C (exp(pow(A), ((exp(IN++)) / (exp(--IN))))); //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
+    //#define C (exp(pow(A), ((exp(++PT)) / (exp(FT++))))); //preincrement the past and divide over the future
     
     //Begin telling computer about the past and future and all time
     #define PT ((FT % C) / T);    
     #define FT (((T) / C) - PT);
-    #define T exp(((pow(exp(V))), (exp(IN, DIM))) / (V / (PT + FT)));
+    #define T (exp((V / (PT + FT)) / (exp(pow(IN, DIM), (V)))));
     
     //Tell it what to calculate and what is going into the constant
     #define V (pow(T, 3) / (PT - FT));
@@ -87,7 +87,7 @@ float main () {
 
     //Initialise the input, output and hidden layers of the network 
     #define INPUT ((T, OUT, OUTPUT) * WEIGHT) + BIAS;
-    #define HIDDEN ((10 * pow(20, 4)) * WEIGHT * (INPUT));
+    #define HIDDEN (((10 * pow(20, 4)) * WEIGHT * (INPUT));
     #define OUTPUT ((4 * WEIGHT) / (HIDDEN)) + BIAS;
     
     return 1;
